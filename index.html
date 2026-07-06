@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Azka Niaz - SE Student">
+    <title>Azka Niaz | Portfolio</title>
+</head>
+<body>
+
+    <!-- Header & Nav: Semantic Tags -->
+    <header>
+        <nav>
+            <h1>Azka Niaz</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#media">Demo Video</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a Software Engineering student at <strong>University of Mianwali</strong>.</p>
+        </section>
+
+        <!-- Skills Section: Lists -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Programming: C++, Assembly (8086)</li>
+                <li>Web Development: HTML5, CSS3</li>
+                <li>Certification: GIS (NAVTTC)</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section: Tables with Colspan/Rowspan -->
+        <section id="projects">
+            <h2>Academic Projects</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Virtual Cash Register</td>
+                        <td>Assembly</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>Book Borrowing System</td>
+                        <td rowspan="2">C++ Development</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>Snake Game</td>
+                        <td>Completed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Multimedia Section: Iframe & Video -->
+        <section id="media">
+            <h2>Project Demo</h2>
+            <!-- Iframe concept -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="YouTube video player"></iframe>
+            <br>
+            <!-- Audio/Video tags -->
+            <video width="320" height="240" controls>
+                <source src="demo.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <!-- Contact Section: Full Form Concepts -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <!-- Text & Email -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                <br><br>
+
+                <!-- Radio Buttons -->
+                <label>Experience Level:</label>
+                <input type="radio" id="beg" name="level" value="beginner"> <label for="beg">Beginner</label>
+                <input type="radio" id="exp" name="level" value="expert"> <label for="exp">Expert</label>
+                <br><br>
+
+                <!-- Checkbox -->
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Subscribe to my updates</label>
+                <br><br>
+
+                <!-- Select Dropdown -->
+                <label for="interest">Area of Interest:</label>
+                <select id="interest">
+                    <option value="web">Web Dev</option>
+                    <option value="ai">AI & Prompt Engineering</option>
+                </select>
+                <br><br>
+
+                <!-- Textarea -->
+                <label for="msg">Message:</label>
+                <textarea id="msg" rows="4" cols="30"></textarea>
+                <br><br>
+
+                <button type="submit">Submit Details</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer: Entities -->
+    <footer>
+        <p>&copy; 2026 Azka Niaz. All rights reserved. &lt;Developed with passion/&gt;</p>
+    </footer>
+
+</body>
+</html>
+
